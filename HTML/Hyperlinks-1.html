@@ -5,12 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HyperLink</title>
 </head>
+<style>
+    a:link{
+        text-decoration: None;
+        color: crimson;
+    }
+    a:visited{
+        text-decoration: None;
+        color: darkgray;
+    }
+    a:active{
+        text-decoration: None;
+        color: green;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+</style>
 <body>
     <h1>HyperLink Basics</h1>
     <a href="https://www.wikipedia.org/wiki/HTML">Introduction to HTML (open on same tab)</a> <br>
-    <a href="https://www.wikipedia.org/wiki/HTML" target="_blank">Introduction to HTML (open on new tab using target attribute)</a>
+    <a href="https://www.wikipedia.org/wiki" target="_blank">Wiki page (open on new tab using target attribute)</a>
     <br>
-    <a href="https://www.wikipedia.org/wiki/HTML" title="Wikipedia Link">Introduction to HTML (using title attribute)</a>
+    <a href="https://www.wikipedia.org" title="Wikipedia Link">Welcome to Wikipedia (using title attribute)</a>
     <br><br>
     <!-- Add Event in our anchor element-->
     <a href="https://www.wikipedia.org/wiki/HTML" onmouseover="hello()">Introduction to HTML (using onmouseover attribute)</a>
@@ -32,6 +49,11 @@
         2. Relative Path: Incomplete Address of Reference Document (HTML\Hyperlinks.html)
     </pre>
 
+    <br>
+    <br>
+
+    <a href="mailto: rathisameeksha9@gmail.com">Email Me!</a><br>
+    <a href="tel: +919521484246">Call</a>
     
 </body>
 </html>
