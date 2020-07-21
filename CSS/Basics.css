@@ -1,0 +1,17 @@
+h3{
+    color: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+}
+h3+p{
+    font-size: 25px;
+}
+ul li{
+    border: 1px dashed black;
+    background: coral;
+}
+body{
+    background: url(https://images.unsplash.com/photo-1457195740896-7f345efef228?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
