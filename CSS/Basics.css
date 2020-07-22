@@ -3,15 +3,36 @@ h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 70px;
 }
-h3+p{
+h3+p{              /* first p after h3 */
     font-size: 25px;
 }
-ul li{
+ul li{             /* li enclosed in ul* -- Descendent Selector */
     border: 1px dashed black;
     background: coral;
+}
+div > h3{            /* h3 is direct child of div  ---  Child Selector */ 
+    color: crimson;
 }
 body{
     background: url(https://images.unsplash.com/photo-1457195740896-7f345efef228?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+
+#h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    text-shadow: 2px;
+}
+
+.class1{
+    border:2px solid rosybrown;
+    font-size: 20px;
+}
+
+.class2{
+    border: 2px dashed chocolate;
+    font-size: 25px;
 }
