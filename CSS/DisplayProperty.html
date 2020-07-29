@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        p{
+            border: 2px solid red;
+            display:inline-block;
+            
+        }
+        #para2{
+            display: inline;
+        }
+        #span{
+            background-color: teal;
+            padding: 20px;
+        }
+        #a2{
+            border: 2px solid blue;
+            display: block;                               /*Display property = block will not work if we use width and height*/
+            padding:10px;
+            background:burlywood;
+            margin: 10px 0;
+            width:200px;
+            height:100px;
+
+        }
+        #a2:hover{
+            background:darkgrey;
+        }
+        #a1{
+            background:darkkhaki;
+            display: inline-block;
+            width:200px;                                     /*display will work with width and height when we use inline block*/
+            height:100px;
+        }
+        #visiblity:hover{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display Property:</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus quod necessitatibus sapiente eum illo. Minus illum unde excepturi, nobis quam laboriosam provident maxime impedit quis magni, recusandae obcaecati soluta repellat. Quibusdam vel et reiciendis culpa, velit saepe omnis iste explicabo laborum aliquam fuga aliquid labore corrupti expedita qui, unde quas.</p>
+    <p id = 'para2'>HeY Bro!</p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, quis.
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatem laudantium laborum dolorum eum iste ipsum a magni eos fuga! Dignissimos quis modi tempora laboriosam. Explicabo quaerat dolorum dolorem natus voluptates, numquam praesentium asperiores repellat perferendis aut ipsam corrupti iure harum, atque architecto dicta adipisci modi nulla laboriosam, quod error?</p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. In, esse!
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt deserunt, voluptatibus velit voluptas placeat similique cum aperiam qui, officia facere aut laudantium corrupti illo, voluptatum dolorem fuga blanditiis ex eveniet dolorum. Officiis reprehenderit minima quia quidem, necessitatibus facilis repellendus accusamus ut eveniet, consequuntur quisquam. Esse, nostrum modi. Cumque, eius illo.</p>
+    Lorem ipsum adipisicing elit. Asperiores, fuga....
+    <a id = "a1" href="#">Display Property Link1</a> .......(Anchor tag is INLINE ELEMENT)
+    <span id = 'span'>Lorem ipsum dolor sit amet.</span> ... (Span tag is also an INLINE ELEMENT)
+    <a id = "a2" href="#">Display Property Link2</a>
+    <br>
+    <h3>Visible and hidden:</h3>
+    <p id="visiblity">This text will hide when we hover over it.</p>
+    <p style="border: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, numquam?</p>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
