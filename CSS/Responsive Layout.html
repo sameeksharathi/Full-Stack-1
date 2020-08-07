@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 1200px;
+      border: solid;
+      padding: 15px;
+      border: solid;
+      font-size: 30px;
+    }
+
+    @media (min-width: 1200px) {
+      .header {
+        background-color: lightgrey;
+        height: 70px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .content {
+        /* border: solid red; */
+
+        margin-bottom: 15px;
+      }
+
+      .content::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+
+      .left-side {
+        width: 20%;
+        float: left;
+        /* border: solid blue; */
+        display: flex;
+        flex-direction: column;
+
+      }
+
+      .nav {
+        height: 300px;
+        background-color: purple;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .news {
+        height: 150px;
+        background-color: chocolate;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .right-side {
+        width: 78%;
+        height: 465px;
+        float: right;
+        /* border: solid green; */
+        background-color: goldenrod;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .footer {
+        background-color: lightsteelblue;
+        height: 70px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .header {
+        background-color: lightgrey;
+        height: 70px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .content {
+        /* border: solid red; */
+
+        margin-bottom: 15px;
+      }
+
+      .content::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+
+      .left-side {
+        width: 20%;
+        float: left;
+        /* border: solid blue; */
+      }
+
+      .nav {
+        height: 300px;
+        background-color: purple;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .news {
+        height: 150px;
+        background-color: chocolate;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .right-side {
+        width: 78%;
+        height: 465px;
+        float: right;
+        /* border: solid green; */
+        background-color: goldenrod;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .footer {
+        background-color: lightsteelblue;
+        height: 70px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      .header {
+        background-color: lightgrey;
+        height: 70px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .content {
+        margin-bottom: 15px;
+        width: 100%;
+        /* border: solid red; */
+        display: table;
+      }
+
+      .left-side::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+
+      .left-side {
+        margin-top: 15px;
+        width: 100%;
+        display: table-footer-group;
+        /* float: left; */
+        /* border: solid blue; */
+      }
+
+      .nav {
+        margin-top: 15px;
+        height: 100px;
+        width: 68%;
+        background-color: purple;
+
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        float: left;
+      }
+
+      .news {
+        margin-top: 15px;
+        height: 100px;
+        width: 30%;
+        background-color: chocolate;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        float: right;
+      }
+
+      .right-side {
+        /* width: 78%; */
+        height: 465px;
+        /* float: right; */
+        /* border: solid green; */
+        background-color: goldenrod;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .footer {
+        background-color: lightsteelblue;
+        height: 70px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .header {
+        background-color: lightgrey;
+        height: 70px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .content {
+        width: 100%;
+        /* border: solid red; */
+        display: table;
+      }
+
+      .left-side {
+        width: 100%;
+        display: table-footer-group;
+        /* float: left; */
+        /* border: solid blue; */
+      }
+
+      .nav {
+        margin-top: 15px;
+        height: 100px;
+        width: 100%;
+        background-color: purple;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .news {
+        height: 100px;
+        width: 100%;
+        background-color: chocolate;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .right-side {
+        /* width: 78%; */
+        height: 465px;
+        /* float: right; */
+        /* border: solid green; */
+        background-color: goldenrod;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .footer {
+        margin-top: 15px;
+        background-color: lightsteelblue;
+        height: 70px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">Header</div>
+    <div class="content">
+      <div class="left-side">
+        <div class="nav">Navigation</div>
+        <div class="news">News Updates</div>
+      </div>
+      <div class="right-side">Main Content</div>
+    </div>
+    <div class="footer">Footer</div>
+  </div>
+</body>
+
+</html>
