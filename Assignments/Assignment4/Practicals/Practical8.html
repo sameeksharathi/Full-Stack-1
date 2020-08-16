@@ -11,7 +11,10 @@
             box-sizing: border-box;
             scroll-behavior: smooth;
             scroll-padding: 150px;
-            
+        }
+        body{
+            padding:0;
+            margin:0;
         }
         .container{
             width: 1200px;
@@ -21,6 +24,7 @@
             box-shadow: 0px 0px 3px  rgba(0.15, 0.15, 0.15, 0.15);
             padding: 15px;
             margin:auto;
+            padding-top:0;
         }
         .header{
             background-color: gray;
@@ -28,18 +32,23 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 20px;
             position:sticky;
             top:0;
             z-index: 2;
+            margin: 0;
+            padding:0;
         }
         .header a{
-            color:black;
+            color:white;
             padding: 15px;
             text-decoration: none;
         }
         .header a:hover{
             background:white;
+            color:black;
+        }
+        .header .head{
+            padding: 5px 30px;
         }
         .banner img{
             width: 100%;
@@ -51,6 +60,7 @@
             margin: 16px 0 35px 0;
         }
         .banner h1{
+            color: white;
             position: absolute;
             margin-left: 15px;
             padding-top:10px;
@@ -61,7 +71,7 @@
         .heading{
             color:black;
             text-align: center;
-            margin-top:50px;
+            
         }
         .section1{
             margin:15px;
@@ -131,9 +141,7 @@
             margin: 10px;
             text-align: center;
         }
-        .header .head{
-            padding: 5px 30px;
-        }
+        
         /*.block{
             height: 300px;
             width: 250px;
@@ -224,35 +232,34 @@
                 </div>
             </div> 
         </div>
-        <div>
-            <h1 class = "heading" >Technologies Used</h1>
-            <div class="section3" id="tech">
-                <div class="block">
-                    <img src="../Images/introductiontohtml.jpg" alt="HTML">
-                    <h3>Introduction to HTML</h3>
-                    <p>Hypertext Markup Language is the standard markup language for document designed to display in a web browser.</p>
-                    <a class = 'button' href = "Practical5 Docs/HTML.html" target="_blank">Read More</a>
-                </div>
-                <div class="block">
-                    <img src="../Images/Introductiontocss.jpg" alt="CSS">
-                    <h3>Introduction to CSS</h3>
-                    <p>Cascading Style Sheets (CSS) is a simple design language, intended to simplify the process of making web pages presentable.</p>            
-                    <a class = 'button' href = "Practical5 Docs/CSS.html" target="_blank">Read More</a>
-                </div>
-                <div class="block">
-                    <img src="../Images/introductiontojavascript.png" alt="JS">
-                    <h3>Introduction to Javascript</h3>
-                    <p>JavaScript (JS) is a cross-platform, object-oriented scripting language used to make webpages interactive.(e.g., clickable buttons)</p>            
-                    <a class = 'button' href = "Practical5 Docs/JS.html" target="_blank">Read More</a>
-                </div>
-                <div class="block">
-                    <img src="../Images/introductiontobootstrap.jpg" alt="Bootstrap">
-                    <h3>Introduction to Bootstrap</h3>
-                    <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.</p>            
-                    <a class = 'button' href = "Practical5 Docs/Bootstrap.html" target="_blank">Read More</a>
-                </div>
+        <h1 class = "heading" >Technologies Used</h1>
+        <div class="section3" id="tech">
+            <div class="block">
+                <img src="../Images/introductiontohtml.jpg" alt="HTML">
+                <h3>Introduction to HTML</h3>
+                <p>Hypertext Markup Language is the standard markup language for document designed to display in a web browser.</p>
+                <a class = 'button' href = "Practical5 Docs/HTML.html" target="_blank">Read More</a>
+            </div>
+            <div class="block">
+                <img src="../Images/Introductiontocss.jpg" alt="CSS">
+                <h3>Introduction to CSS</h3>
+                <p>Cascading Style Sheets (CSS) is a simple design language, intended to simplify the process of making web pages presentable.</p>            
+                <a class = 'button' href = "Practical5 Docs/CSS.html" target="_blank">Read More</a>
+            </div>
+            <div class="block">
+                <img src="../Images/introductiontojavascript.png" alt="JS">
+                <h3>Introduction to Javascript</h3>
+                <p>JavaScript (JS) is a cross-platform, object-oriented scripting language used to make webpages interactive.(e.g., clickable buttons)</p>            
+                <a class = 'button' href = "Practical5 Docs/JS.html" target="_blank">Read More</a>
+            </div>
+            <div class="block">
+                <img src="../Images/introductiontobootstrap.jpg" alt="Bootstrap">
+                <h3>Introduction to Bootstrap</h3>
+                <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.</p>            
+                <a class = 'button' href = "Practical5 Docs/Bootstrap.html" target="_blank">Read More</a>
             </div>
         </div>
+
         <h1 class = "heading" >Contact</h1>
         <div class="footer" id="contact">
             <div><p>Website Template for Practical-8 © <a style="text-decoration: none;" href="https://www.github.com/sameeksharathi">Sameeksha</a></p></div>
