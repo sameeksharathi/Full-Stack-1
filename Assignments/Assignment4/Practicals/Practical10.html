@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-10</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .header{
+            width: 100%;
+            height: 80px;
+            background: #2f3640;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+        }
+        .header img{
+            width: 75px;
+            height: 70px;
+        }
+        .header h1{
+            margin-left: 10px;
+            line-height: 75px;
+            color: white;
+        }
+        .content{
+            margin-top: 80px;
+            width: 100%;
+            padding: 20px;
+            float: right;
+            transition: 0.5s;
+        }
+        .content img{
+            width: 100%;
+            max-width: 700px;
+            display: block;
+            margin: auto;
+        }
+        .content p{
+            text-align: justify;
+        }
+        .bar{
+            width: 20%;
+            height: 100%;
+            position: fixed;
+            top: 80px;
+            background-color:#353b48;
+            left: -100%;
+            transition: 0.5s;
+        }
+        .bar ul{
+            list-style: none;
+        }
+        .bar ul li{
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        }
+        .bar ul li a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-size: 22px;
+            padding: 15px 15px;
+        }
+        .bar a i{
+            margin-right:15px;
+        }
+        .bar ul li a:hover{
+            border-left: 10px solid white;
+            transition: 0.4s;
+        }
+        .social{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 30px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+            border-top:2px solid rgba(255, 255, 255, 0.1);
+            padding: 15px 20px;
+            margin-top: 260px; 
+        }
+        i{
+            font-size: 30px;
+            color: white;
+        }
+        .show-btn, .hide-btn{
+            font-size: 35px;
+            color:white;
+            position: fixed;
+            top: 20px;
+            left:40px;
+        }
+        .hide-btn{
+            opacity: 0;
+        }
+        #check{
+            display: none;
+        }
+        #check:checked ~ .bar{
+            left: 0;
+        }
+        #check:checked ~ .show-btn{
+            opacity: 0;
+        }
+        #check:checked ~ .hide-btn{
+            opacity: 1;
+        }
+        #check:checked ~ .content{
+            width: 80%;
+        }
+        @media (max-width: 768px){
+            .bar{
+                width: 100%;
+                text-align: center;
+            }
+            .header h1{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="../Images/fullstack-logo.png" alt="logo">
+        <h1>FULLSTACK</h1>
+    </div>
+    <input type="checkbox" name="" id="check">
+    <label for="check" class = "show-btn"> 
+        <i class = "fa fa-bars"></i>
+    </label>
+    <label for="check" class = "hide-btn"> 
+        <i class = "fa fa-times"></i>
+    </label>
+    <div class="bar">
+        <ul>
+            <li><a href="#"><i class="fa fa-home"></i><span>Home</span></a></li>
+            <li><a href="#"><i class="fa fa-user"></i><span>About</span></a></li>
+            <li><a href="#"><i class="fa fa-tasks"></i><span>Services</span></a></li>
+            <li><a href="#"><i class="fa fa-rss"></i><span>Blog</span></a></li>
+            <li><a href="#"><i class="fa fa-phone-square"></i><span>Contact</span></a></li>
+        </ul>
+        <div class="social">
+            <a href="#"><i class="fa fa-facebook-square"></i></a>
+            <a href="#"><i class="fa fa-youtube-square"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <div class="content">
+        <img src="../Images/emile-perron-xrVDYZRGdw4-unsplash.jpg" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum nemo sed quibusdam obcaecati tempora amet, mollitia ipsa, nisi sint dolore nostrum minus quasi in id, consequuntur itaque a. Quas atque a natus nihil explicabo, accusamus magni unde nisi voluptatem velit aperiam doloribus minima ab deleniti, enim ipsa provident, totam sint esse fuga! Illo consequuntur molestiae, minus ipsa odit expedita eum tempora magnam excepturi nemo veritatis nobis porro saepe accusamus temporibus error! Ullam expedita fuga, optio non qui aliquam ipsum alias, odio magnam rem voluptate molestiae nam eaque laudantium animi, necessitatibus porro! Labore voluptatibus voluptatem ullam corporis, cumque possimus aliquam id qui delectus unde ducimus neque nisi temporibus, debitis consequuntur quidem rem esse, aut doloremque pariatur harum tenetur. Dolores velit nisi ullam illum officia, mollitia dolorem error incidunt pariatur laudantium. Dolor modi vero quae amet laboriosam totam aut, perferendis aperiam iste exercitationem accusamus aspernatur vitae illo quo? Officia beatae dicta, fuga nostrum facilis minus omnis, ullam sed ad, ipsum facere corrupti! Delectus labore unde molestiae iure accusantium, qui animi consequuntur laborum a corrupti nihil vero odio exercitationem deserunt repudiandae placeat obcaecati rem, pariatur nostrum necessitatibus repellat illum impedit perferendis velit. Cumque architecto omnis ea laudantium nulla distinctio deserunt porro itaque repudiandae nisi maiores fugit exercitationem ex provident, suscipit libero! Saepe libero tenetur magnam distinctio voluptas, reprehenderit in, similique sequi nostrum rerum impedit vero dolor porro cumque eum? Praesentium alias cumque et voluptatibus ut, unde ipsum adipisci, quidem iste nulla itaque ipsam quasi sunt, veniam eveniet! Rem qui nostrum asperiores ipsum hic quisquam aliquam error rerum consequuntur eveniet maiores neque praesentium pariatur dignissimos, ipsa corporis deserunt laborum ut provident consequatur sed! Saepe architecto voluptas quae exercitationem amet velit veritatis fugit esse. Architecto, quia illo quas dolore voluptatem sint tenetur, voluptatibus suscipit non odit quidem nam omnis illum necessitatibus, dicta voluptates alias deserunt soluta optio ea praesentium iste! Minima maiores reiciendis ea, pariatur autem laudantium odit nisi minus soluta quisquam labore amet doloribus et doloremque possimus eaque tenetur ad! Cumque dignissimos aut at praesentium perferendis placeat, laudantium sed quisquam accusantium non optio ipsum asperiores. Incidunt repudiandae recusandae cum! Nemo eum labore voluptas ipsa minima impedit rem veniam tempora et, nobis iste omnis architecto consequuntur magnam. Cum provident laborum possimus delectus totam, eius nam reiciendis iste quasi rerum, perspiciatis tempore qui maiores ex ut quam nemo obcaecati illum quae repellat a nostrum. Rem animi quas fugit odit earum hic nemo iste officiis dolore in fuga laborum, voluptas aperiam voluptatem tempora accusantium! Itaque repudiandae natus iure quis atque necessitatibus, in ipsum dolorum ducimus saepe architecto aut inventore temporibus ipsa. Repellendus sint sit voluptatum vel placeat pariatur consequatur animi quo deserunt, nobis in possimus veritatis expedita modi assumenda, doloribus distinctio ducimus consequuntur quae nostrum officiis impedit similique esse numquam! Itaque quia iste fugiat laudantium laboriosam. Voluptatem iusto fugit quam repellendus, repellat error ut! Animi eveniet eaque, ipsam sapiente praesentium accusantium enim at, molestiae quos, quas vitae nulla. Aut, perferendis ullam. Sit exercitationem fugit consequuntur maiores, aperiam nemo laboriosam accusamus ex incidunt repellendus aliquid, eaque fugiat error.</p>
+    </div>
+
+</body>
+</html>
