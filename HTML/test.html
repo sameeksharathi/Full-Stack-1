@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        p:nth-child(2),p:nth-child(3){
+            color:red;
+        }
+        p:empty{
+            background-color: lightgrey;
+            height: 20px;   
+        }
+        p:only-child{
+            background-color: black;
+            color:white;
+            height: 25px; 
+        }
+        p:first-child::first-letter{
+            font-size: 20px;
+        }
+        p:last-child::before{
+            font-family: "FontAwesome";
+            content:'\f040';
+            margin-right:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p> hello</p>
+        <p></p>
+        <p>hello</p>
+        <p>hello</p>
+        <div>
+            <p>hello</p>
+        </div>
+    </div>
+</body>
+</html>
