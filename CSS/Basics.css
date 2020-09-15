@@ -10,7 +10,7 @@ ul li{             /* li enclosed in ul* -- Descendent Selector */
     border: 1px dashed black;
     background: coral;
 }
-div > h3{            /* h3 is direct child of div  ---  Child Selector */ 
+section > h3{            /* h3 is direct child of section  ---  Child Selector */ 
     color: crimson;
 }
 body{
