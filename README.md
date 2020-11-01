@@ -2,4 +2,4 @@
 
 ## Index of Practicals: 
 
-<a href = "https://www.sameeksharathi.github.io/Full-Stack-1/Assignments/Assignment4/Index.html">Click Here!</a> to view live.
+<a href = "https://sameeksharathi.github.io/Full-Stack-1/Assignments/Assignment4/Index.html">Click Here!</a> to view live.
